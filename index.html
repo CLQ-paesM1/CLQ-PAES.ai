@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLQ – Plataforma PAES Matemática 1</title>
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="simulador.css">
+    <!-- Fuente Google Poppins para tipografía elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación principal -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="assets/logos/clq-logo.png" alt="CLQ logo">
+                <span>CLQ</span>
+            </div>
+            <div class="navbar-links">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="simulador.html">Simulador</a>
+                <a href="tutor.html">Tutor</a>
+                <a href="instrucciones.html">Instrucciones</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Encabezado con hero visual -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>Bienvenido a <span class="brand">CLQ</span></h1>
+            <p class="tagline">Prepárate para la PAES Matemática 1 de manera inteligente y autónoma.</p>
+            <div class="cta-container">
+                <a href="simulador.html" class="btn">Comenzar Simulador</a>
+                <a href="tutor.html" class="btn secondary">Hablar con el Tutor</a>
+                <a href="instrucciones.html" class="btn secondary">Cómo funciona</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de características principales -->
+    <section class="features">
+        <h2>¿Qué encontrarás en CLQ?</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <img src="assets/media/feature-simulator.png" alt="Simulador" class="feature-icon">
+                <h3>Simulador Interactivo</h3>
+                <p>Practica con ensayos realistas de 20 preguntas o elige el modo práctica con retroalimentación inmediata. Corrige tus respuestas con explicaciones detalladas y mide tu progreso.</p>
+            </div>
+            <div class="feature-item">
+                <img src="assets/media/feature-tutor.png" alt="Tutor IA" class="feature-icon">
+                <h3>Tutor IA</h3>
+                <p>Resuelve tus dudas matemáticas a través de un chat que ofrece explicaciones paso a paso y ejercicios de refuerzo.</p>
+            </div>
+            <div class="feature-item">
+                <img src="assets/media/feature-study.png" alt="Guía de Estudio" class="feature-icon">
+                <h3>Guía de Estudio</h3>
+                <p>Descubre consejos y estrategias para preparar la PAES de manera efectiva y mantener la motivación.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de misión de CLQ -->
+    <section class="mission">
+        <div class="mission-content">
+            <img src="assets/media/mission.png" alt="Misión CLQ" class="mission-image">
+            <div class="mission-text">
+                <h2>Nuestra Misión</h2>
+                <p>Inspirar a cada estudiante chileno a alcanzar su máximo potencial en Matemática&nbsp;PAES a través de una plataforma inclusiva, gratuita y de calidad. CLQ quiere ser un puente entre la educación y el futuro, brindando recursos que transformen el aprendizaje en oportunidades reales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón volver arriba -->
+    <button id="to-top" aria-label="Volver arriba">↑</button>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2025 CLQ. Construido con compromiso y pasión educativa. <br>
+        ¿Tienes preguntas? <a href="mailto:info@clq.com" style="color: #ffffff; text-decoration: underline;">Contáctanos</a></p>
+    </footer>
+
+    <!-- Script para mostrar/ocultar botón de volver arriba -->
+    <script>
+    const toTopBtn = document.getElementById('to-top');
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            toTopBtn.style.display = 'flex';
+        } else {
+            toTopBtn.style.display = 'none';
+        }
+    });
+    toTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    </script>
+</body>
+</html>
